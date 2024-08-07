@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Enhanced Landing Page</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -18,6 +18,11 @@
         </nav>
     </header>
     <main>
+        <section id="hero">
+            <h2>Welcome to Our Website</h2>
+            <p>Your journey starts here. Discover more below.</p>
+            <button id="learnMoreButton">Learn More</button>
+        </section>
         <section id="home">
             <h2>Home</h2>
             <p>This is the home section of the landing page.</p>
@@ -26,10 +31,20 @@
         <section id="about">
             <h2>About</h2>
             <p>This section contains information about the website or company.</p>
+            <img src="about-image.jpg" alt="About Us">
         </section>
         <section id="contact">
             <h2>Contact</h2>
             <p>Get in touch with us through the contact form.</p>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </main>
     <footer>
